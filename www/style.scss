@@ -1,0 +1,79 @@
+.app {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+    padding: 30px;
+    margin: 0;
+    
+    // application title
+    &__title {
+        flex: 0 0 auto;
+        font-size: 36px;
+        font-weight: bold;
+        font-family: 'Teko', sans-serif;
+        margin: 0;
+    }
+
+    // application subtitle
+    &__subtitle {
+        flex: 0 0 auto;
+        margin: 0;
+        font-weight: 300;
+    }
+
+    // image preview and controls
+    &__preview {
+        flex: 0 0 auto;
+        margin-top: 30px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        overflow: hidden;
+
+        &__image {
+            padding: 10px;
+            text-align: center;
+        }
+
+        &__controls {
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            padding: 0 10px;
+
+            &__input {
+                flex: 1 1 auto;
+                display: flex;
+                align-items: center;
+
+                &__url {
+                    flex: 0 0 auto;
+                    font-size: 12px;
+                }
+
+                &__size {
+                    flex: 1 1 auto;
+                    border: none;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 12px;
+                }
+            }
+
+            &__button {
+                flex: 0 0 auto;
+                padding: 4px 8px;
+                border-radius: 3px;
+                background-color: #000;
+                color: #fff;
+                outline: none;
+                border: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

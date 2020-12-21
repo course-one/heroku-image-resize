@@ -1,0 +1,36 @@
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Image Resizer</title>
+
+        <!-- external resources -->
+        <link rel='preconnect' href='https://fonts.gstatic.com'>
+        <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Teko:wght@700&display=swap'
+            rel='stylesheet'>
+        <link rel='stylesheet' href='/www/style.css'>
+        <script src='/www/main.js' defer></script>
+    </head>
+
+    <body class='app'>
+        <p class='app__title'>Image Resizer</p>
+        <p class='app__subtitle'>A Heroku deployed application to resize a test image.</p>
+
+        <!-- preview -->
+        <div class='app__preview'>
+            <div class='app__preview__image'>
+                <img id='preview' class='app__preview__image__img' src='/resize/200x150' alt='Resized image'>
+            </div>
+            
+            <!-- controls -->
+            <form id='form' class='app__preview__controls'>
+                <div class='app__preview__controls__input'>
+                    <p class='app__preview__controls__input__url'>/resize/</p>
+                    <input id='size' class='app__preview__controls__input__size' value="200x150" required/>
+                </div>
+                <button class='app__preview__controls__button' type='submit'>Submit</button>
+            </form>
+        </div>
+
+    </body>
+</html>

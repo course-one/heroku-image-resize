@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "heroku-image-resize",
+  "version": "1.0.0",
+  "description": "A simple image resizer application created using Node for Heroku.",
+  "main": "server.js",
+  "scripts": {
+    "sass:compile": "node-sass ./www/style.scss ./www/style.css",
+    "sass:watch": "node-sass -w ./www/style.scss ./www/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/course-one/heroku-image-resize.git"
+  },
+  "keywords": [],
+  "author": "Uday Hiwarale <thatisuday@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/course-one/heroku-image-resize/issues"
+  },
+  "homepage": "https://github.com/course-one/heroku-image-resize#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sharp": "^0.26.3"
+  },
+  "engines": {
+    "node": "12.16.2"
+  }
+}
